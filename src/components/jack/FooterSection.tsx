@@ -24,6 +24,9 @@ export function FooterSection() {
             "
             style={{
               fontSize: "clamp(3rem, 10vw, 8rem)",
+              background: "linear-gradient(180deg, #FFFFFF 0%, #A1A1AA 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
           >
             Let's Build
@@ -36,7 +39,7 @@ export function FooterSection() {
         <FadeIn delay={0.2} y={30}>
           <div className="flex justify-center mt-12">
             <a
-              href="mailto:aminehamzaoui1925@gmail.com"
+              href="mailto:balapranav3010@gmail.com"
               className="
                 px-10 py-5
                 rounded-full
@@ -62,7 +65,7 @@ export function FooterSection() {
         <FadeIn delay={0.3} y={20}>
           <div className="mt-14 flex justify-center">
             <a
-              href="mailto:aminehamzaoui1925@gmail.com"
+              href="mailto:balapranav3010@gmail.com"
               className="
                 flex items-center gap-3
                 text-white/70
@@ -72,7 +75,7 @@ export function FooterSection() {
             >
               <FaEnvelope size={20} />
               <span className="text-lg">
-                aminehamzaoui1925@gmail.com
+                balapranav3010@gmail.com
               </span>
             </a>
           </div>
@@ -131,11 +134,11 @@ export function FooterSection() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-white/40 text-sm">
-            © 2026 Amine . All rights reserved.
+            © 2026 Pranav. All rights reserved.
           </span>
 
           <span className="text-white/40 text-sm uppercase tracking-[0.2em]">
-            Designed & Developed by Amine
+            Designed & Developed by Pranav
           </span>
         </div>
       </div>

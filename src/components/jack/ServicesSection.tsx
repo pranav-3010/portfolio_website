@@ -3,29 +3,62 @@ import { FadeIn } from "./FadeIn";
 const SERVICES = [
   {
     n: "01",
-    name: "Software Development",
-    desc: "Building reliable, well-structured software solutions tailored to real-world problems, with a focus on clean code and maintainability.",
+    name: "Core Website Services",
+    desc: "Creating robust, high-performance websites built to elevate your online presence. Built with speed, security, and responsive layouts to match your business goals.",
+    features: [
+      "Business websites",
+      "3D animated websites",
+      "Portfolio websites",
+      "E-commerce stores"
+    ]
   },
   {
     n: "02",
-    name: "Web Development",
-    desc: "Designing and developing modern, responsive websites and web applications using current frameworks and best practices.",
+    name: "Design Services",
+    desc: "Crafting modern, user-centric interfaces that convert. I focus on creating visually stunning and highly engaging layouts for all digital platforms.",
+    features: [
+      "Website UI/UX design",
+      "Landing page design",
+      "Dashboard design",
+      "Mobile-responsive design",
+      "Website redesigns"
+    ]
   },
   {
     n: "03",
-    name: "Desktop Application Development",
-    desc: "Creating efficient cross-platform desktop applications with intuitive interfaces and solid performance.",
+    name: "Automation Services",
+    desc: "Streamlining your business processes and saving you valuable hours daily by connecting your tools and automating repetitive workflows.",
+    features: [
+      "Form → Google Sheets automation",
+      "Email automation",
+      "Appointment scheduling",
+      "WhatsApp automation",
+      "CRM integration"
+    ]
   },
   {
     n: "04",
-    name: "Database Design & Management",
-    desc: "Designing, structuring, and managing databases to ensure data integrity, scalability, and efficient querying.",
+    name: "SEO Services",
+    desc: "Helping your brand rank higher and load faster on search engines. I implement search engine best practices to drive high-quality organic traffic.",
+    features: [
+      "Technical SEO",
+      "On-page SEO",
+      "Website speed optimization"
+    ]
   },
   {
     n: "05",
-    name: "Technical Problem Solving",
-    desc: "Analyzing complex technical challenges and delivering clear, efficient, and well-thought-out solutions.",
-  },
+    name: "Maintenance Plans",
+    desc: "Proactive care to keep your website running at peak performance. Sleep easy knowing your security, backups, and content updates are fully handled.",
+    features: [
+      "Website updates",
+      "Hosting management",
+      "Security monitoring",
+      "Content updates",
+      "Backup management",
+      "Performance optimization"
+    ]
+  }
 ];
 
 export function ServicesSection() {
@@ -128,7 +161,7 @@ export function ServicesSection() {
                   </div>
 
                   <p
-                    className="font-light leading-relaxed max-w-2xl"
+                    className="font-light leading-relaxed max-w-2xl mb-4"
                     style={{
                       color: "#FFFFFF",
                       opacity: 0.65,
@@ -137,6 +170,28 @@ export function ServicesSection() {
                   >
                     {s.desc}
                   </p>
+
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {s.features.map((feat) => (
+                      <span
+                        key={feat}
+                        className="
+                          px-3 py-1.5
+                          rounded-full
+                          text-xs sm:text-sm
+                          bg-white/[0.04]
+                          border border-white/10
+                          text-white/80
+                          font-light
+                          transition-all duration-300
+                          hover:bg-white/[0.08]
+                          hover:text-white
+                        "
+                      >
+                        {feat}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </FadeIn>

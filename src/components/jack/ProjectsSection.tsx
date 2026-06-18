@@ -1,57 +1,131 @@
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "./FadeIn";
 import { LiveProjectButton } from "./LiveProjectButton";
 
-import projectReact from "@/assets/cp.png";
-import projectPersonal from "@/assets/project-personal.jpg";
-import projectShowcase from "@/assets/game.png";
-import projectResponsive from "@/assets/prot.png";
-import projectJsonDb from "@/assets/logo.jpg";
+import projectBusiness from "@/assets/project-business.jpg";
+import projectLambo from "@/assets/project-lambo.png";
+import projectDrink from "@/assets/project-drink.png";
+import projectNike from "@/assets/project-nike.jpg";
+import projectPortfolio from "@/assets/project-portfolio.png";
+import projectBasic from "@/assets/project-basic.png";
+import projectBasicCafe from "@/assets/project-basic-cafe.jpg";
+import projectPortfolioLeftTop from "@/assets/cp.png";
+import projectPortfolioLeftBottom from "@/assets/prot.png";
+
+interface SubProject {
+  name: string;
+  image: string;
+  link: string;
+}
 
 interface Project {
   n: string;
   category: string;
   name: string;
   image: string;
-  link: string;
+  imageLeftTop?: string;
+  imageLeftBottom?: string;
+  mainImageClass?: string;
+  subProjects: SubProject[];
 }
 
 const PROJECTS: Project[] = [
   {
     n: "01",
-    category: "Web",
-    name: "Modern React Portfolio",
-    image: projectReact,
-    link: "https://github.com/Saboo24/Portfolio13.git",
+    category: "Custom Web",
+    name: "Business Websites",
+    image: projectBusiness,
+    subProjects: [
+      {
+        name: "Sleek Marketing Agency",
+        image: projectBusiness,
+        link: "https://github.com/balapranav3010",
+      },
+      {
+        name: "Corporate Enterprise Portal",
+        image: projectBusiness,
+        link: "https://github.com/balapranav3010",
+      },
+    ],
   },
   {
     n: "02",
-    category: "Web",
-    name: "Personal Portfolio Website",
-    image: projectPersonal,
-    link: "https://github.com/Saboo24/Portfolio12.git",
+    category: "Interactive Web",
+    name: "3D Animated Websites",
+    image: projectLambo,
+    subProjects: [
+      {
+        name: "Velocity Motors (Lamborghini)",
+        image: projectLambo,
+        link: "https://blue-lamborghini-huracan.vercel.app/",
+      },
+      {
+        name: "Interactive Space Experience",
+        image: projectLambo,
+        link: "https://github.com/balapranav3010",
+      },
+      {
+        name: "Lumin Vibe (Flavoured Drink)",
+        image: projectDrink,
+        link: "https://flavoured-drink.vercel.app",
+      },
+    ],
   },
   {
     n: "03",
-    category: "Web",
-    name: "Developer Portfolio Showcase",
-    image: projectShowcase,
-    link: "https://github.com/Saboo24/Portfolio11.git",
+    category: "E-Commerce",
+    name: "E-Commerce Stores",
+    image: projectNike,
+    subProjects: [
+      {
+        name: "Nike Jordan Store",
+        image: projectNike,
+        link: "https://github.com/balapranav3010",
+      },
+      {
+        name: "TechGadgets Shop",
+        image: projectNike,
+        link: "https://github.com/balapranav3010",
+      },
+    ],
   },
   {
     n: "04",
-    category: "Web",
-    name: "Responsive Portfolio Experience",
-    image: projectResponsive,
-    link: "https://github.com/Saboo24/Portfolio12.git",
+    category: "Personal Web",
+    name: "Portfolio Websites",
+    image: projectPortfolio,
+    subProjects: [
+      {
+        name: "Mariana Creative Portfolio",
+        image: projectPortfolio,
+        link: "https://github.com/balapranav3010",
+      },
+      {
+        name: "Minimalist Designer Showcase",
+        image: projectPortfolio,
+        link: "https://github.com/balapranav3010",
+      },
+    ],
   },
   {
     n: "05",
-    category: "Software",
-    name: "Mini JSON Database",
-    image: projectJsonDb,
-    link: "https://github.com/Saboo24/MiniJSONDatabase.git",
+    category: "Web Essentials",
+    name: "Basic Websites",
+    image: projectBasicCafe,
+    mainImageClass: "object-contain p-8 md:p-12 bg-neutral-900/30",
+    subProjects: [
+      {
+        name: "Clean Informational Website",
+        image: projectBasic,
+        link: "https://github.com/balapranav3010",
+      },
+      {
+        name: "Aurora Brew (Cafe Website)",
+        image: projectBasicCafe,
+        link: "https://github.com/balapranav3010",
+      },
+    ],
   },
 ];
 
@@ -60,11 +134,13 @@ function ProjectCard({
   index,
   total,
   progress,
+  onOpenCollection,
 }: {
   project: Project;
   index: number;
   total: number;
   progress: ReturnType<typeof useScroll>["scrollYProgress"];
+  onOpenCollection: () => void;
 }) {
   const targetScale = 1 - (total - 1 - index) * 0.03;
 
@@ -121,7 +197,7 @@ function ProjectCard({
             </div>
           </div>
 
-          <LiveProjectButton href={project.link} />
+          <LiveProjectButton onClick={onOpenCollection} label="View Collection" />
         </div>
 
         {/* Images */}
@@ -129,7 +205,7 @@ function ProjectCard({
           {/* Left */}
           <div className="md:col-span-2 flex flex-col gap-4">
             <img
-              src={project.image}
+              src={project.imageLeftTop || project.image}
               alt={project.name}
               loading="lazy"
               className="
@@ -145,7 +221,7 @@ function ProjectCard({
             />
 
             <img
-              src={project.image}
+              src={project.imageLeftBottom || project.image}
               alt={project.name}
               loading="lazy"
               className="
@@ -162,18 +238,17 @@ function ProjectCard({
           </div>
 
           {/* Main Image */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-3 flex items-center justify-center overflow-hidden rounded-[35px] md:rounded-[45px] border border-white/10">
             <img
               src={project.image}
               alt={project.name}
               loading="lazy"
-              className="
-                w-full h-full object-cover
-                rounded-[35px] md:rounded-[45px]
-                border border-white/10
+              className={`
+                w-full h-full
                 hover:scale-[1.01]
                 transition-all duration-300
-              "
+                ${project.mainImageClass || "object-cover"}
+              `}
               style={{
                 minHeight: "100%",
               }}
@@ -187,6 +262,7 @@ function ProjectCard({
 
 export function ProjectsSection() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [activeCategory, setActiveCategory] = useState<Project | null>(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -234,10 +310,120 @@ export function ProjectsSection() {
               index={index}
               total={PROJECTS.length}
               progress={scrollYProgress}
+              onOpenCollection={() => setActiveCategory(project)}
             />
           </div>
         ))}
       </div>
+
+      {/* Modal Collection */}
+      <AnimatePresence>
+        {activeCategory && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setActiveCategory(null)}
+              className="absolute inset-0 bg-black/80 backdrop-blur-md"
+            />
+
+            {/* Modal Body */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="
+                relative z-10
+                w-full max-w-5xl max-h-[85vh]
+                overflow-y-auto
+                rounded-[30px] sm:rounded-[40px]
+                border border-white/10
+                bg-[#0C0C0C]
+                p-6 sm:p-10 md:p-12
+                shadow-2xl
+              "
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setActiveCategory(null)}
+                className="
+                  absolute top-6 right-6
+                  text-white/60 hover:text-white
+                  bg-white/5 hover:bg-white/10
+                  p-3 rounded-full
+                  transition-all duration-300
+                  cursor-pointer
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+
+              <div className="flex flex-col gap-1 mb-8 sm:mb-10">
+                <span className="text-white/50 uppercase tracking-[0.25em] text-xs sm:text-sm">
+                  {activeCategory.category}
+                </span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">
+                  {activeCategory.name}
+                </h3>
+              </div>
+
+              {/* Sub-projects Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {activeCategory.subProjects.map((sub, i) => (
+                  <motion.div
+                    key={sub.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                    className="
+                      group
+                      flex flex-col
+                      rounded-[25px]
+                      border border-white/10
+                      bg-white/[0.02]
+                      p-4 sm:p-5
+                      transition-all duration-300
+                      hover:bg-white/[0.04]
+                      hover:border-white/20
+                    "
+                  >
+                    <div className="overflow-hidden rounded-[18px] border border-white/5 mb-4 relative aspect-[16/10]">
+                      <img
+                        src={sub.image}
+                        alt={sub.name}
+                        className="
+                          w-full h-full object-cover
+                          transition-transform duration-500
+                          group-hover:scale-105
+                        "
+                      />
+                    </div>
+
+                    <h4 className="text-lg sm:text-xl font-medium text-white mb-4 uppercase tracking-wide">
+                      {sub.name}
+                    </h4>
+
+                    <div className="mt-auto">
+                      <LiveProjectButton href={sub.link} label="Visit Website" />
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

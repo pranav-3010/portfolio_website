@@ -1,7 +1,8 @@
+import { useState, useEffect } from "react";
 import { FadeIn } from "./FadeIn";
 import { Magnet } from "./Magnet";
 import { ContactButton } from "./ContactButton";
-import aminePortrait from "@/assets/amine.png";
+import aminePortrait from "@/assets/tp-tech.png";
 
 const NAV_LINKS = [
   "About",
@@ -12,6 +13,39 @@ const NAV_LINKS = [
 ];
 
 export function HeroSection() {
+  const fullText = "Hi, i'm pranav";
+  const [typedText, setTypedText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
+    let index = 0;
+    let timerId: NodeJS.Timeout;
+    let intervalId: NodeJS.Timeout;
+
+    timerId = setTimeout(() => {
+      intervalId = setInterval(() => {
+        setTypedText(fullText.slice(0, index + 1));
+        index++;
+        if (index >= fullText.length) {
+          clearInterval(intervalId);
+          timerId = setTimeout(() => setShowCursor(false), 2000);
+        }
+      }, 70);
+    }, 400);
+
+    return () => {
+      clearTimeout(timerId);
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [isMounted]);
+
   return (
     <section
       className="h-screen flex flex-col relative"
@@ -46,7 +80,7 @@ export function HeroSection() {
       </FadeIn>
 
       {/* Title */}
-      <div className="overflow-hidden mt-6 sm:mt-4 md:-mt-5 px-2">
+      <div className="overflow-hidden mt-6 sm:mt-4 md:-mt-5 px-6">
         <FadeIn delay={0.15} y={40}>
           <h1
             className="
@@ -57,13 +91,14 @@ export function HeroSection() {
               leading-none
               whitespace-nowrap
               w-full
-              text-[14vw]
-              sm:text-[15vw]
-              md:text-[16vw]
-              lg:text-[17.5vw]
+              text-[12.5vw]
+              sm:text-[13vw]
+              md:text-[13.5vw]
+              lg:text-[14.2vw]
             "
           >
-            Hi, i&apos;m amine
+            {isMounted ? (typedText || "\u00A0") : "Hi, i'm pranav"}
+            {isMounted && showCursor && <span className="animate-pulse ml-1 text-white/50">|</span>}
           </h1>
         </FadeIn>
       </div>
@@ -138,7 +173,7 @@ export function HeroSection() {
         >
           <img
             src={aminePortrait}
-            alt="Amine Hamzaoui portrait"
+            alt="Pranav portrait"
             className="w-full h-auto select-none pointer-events-none"
             draggable={false}
           />

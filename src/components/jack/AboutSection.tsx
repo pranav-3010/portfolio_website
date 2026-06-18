@@ -56,8 +56,8 @@ export function AboutSection() {
 
       <div className="relative z-10 flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
         <AnimatedText
-          text="I am a Computer Science student at USTHB passionate about software development and problem-solving. I enjoy building practical applications, exploring new technologies, and continuously improving my programming skills."
-          className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px]"
+          text="I'm Pranav, a web developer who builds modern, responsive, and high-performing websites. I help businesses and individuals create a strong online presence through custom web development, AI-powered solutions, automation, and SEO-friendly designs. My goal is to deliver websites that are visually appealing, user-focused, and built for growth."
+          className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[720px]"
           style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
         />
         <ContactButton />

@@ -11,22 +11,22 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Amine Hamzaoui | Computer Science Student & Software Developer",
+        title: "Pranav | Computer Science Student & Software Developer",
       },
       {
         name: "description",
         content:
-          "Amine Hamzaoui — Computer Science student at USTHB and software developer building practical, modern applications.",
+          "Pranav — Computer Science student and software developer building practical, modern applications.",
       },
       {
         property: "og:title",
         content:
-          "Amine Hamzaoui | Computer Science Student & Software Developer",
+          "Pranav | Computer Science Student & Software Developer",
       },
       {
         property: "og:description",
         content:
-          "Amine Hamzaoui — Computer Science student at USTHB and software developer building practical, modern applications.",
+          "Pranav — Computer Science student and software developer building practical, modern applications.",
       },
     ],
 
