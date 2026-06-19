@@ -17,6 +17,7 @@ import projectTargo from "@/assets/project-targo.png";
 import projectGym from "@/assets/project-gym.png";
 import projectCoffeeDay from "@/assets/project-coffee-day.png";
 import projectHuracan from "@/assets/project-huracan.png";
+import projectDrinkNew from "@/assets/project-drink-new.png";
 
 interface SubProject {
   name: string;
@@ -71,8 +72,8 @@ const PROJECTS: Project[] = [
         link: "https://github.com/balapranav3010",
       },
       {
-        name: "Lumin Vibe (Flavoured Drink)",
-        image: projectDrink,
+        name: "Flavoured drinks website",
+        image: projectDrinkNew,
         link: "https://flavoured-drink.vercel.app",
       },
     ],
