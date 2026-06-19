@@ -14,6 +14,7 @@ import projectPortfolioLeftTop from "@/assets/cp.png";
 import projectPortfolioLeftBottom from "@/assets/prot.png";
 import projectDental from "@/assets/project-dental.png";
 import projectTargo from "@/assets/project-targo.png";
+import projectGym from "@/assets/project-gym.png";
 
 interface SubProject {
   name: string;
@@ -45,9 +46,9 @@ const PROJECTS: Project[] = [
         link: "https://dental-hub-craft.vercel.app/",
       },
       {
-        name: "Corporate Enterprise Portal",
-        image: projectBusiness,
-        link: "https://github.com/balapranav3010",
+        name: "Gym website",
+        image: projectGym,
+        link: "https://v0-premium-gym-website-eight.vercel.app",
       },
     ],
   },
