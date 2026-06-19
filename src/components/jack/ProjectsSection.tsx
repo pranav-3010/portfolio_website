@@ -18,6 +18,8 @@ import projectGym from "@/assets/project-gym.png";
 import projectCoffeeDay from "@/assets/project-coffee-day.png";
 import projectHuracan from "@/assets/project-huracan.png";
 import projectDrinkNew from "@/assets/project-drink-new.png";
+import projectTargoLogistics from "@/assets/project-targo-logistics.png";
+
 
 interface SubProject {
   name: string;
@@ -67,9 +69,9 @@ const PROJECTS: Project[] = [
         link: "https://blue-lamborghini-huracan.vercel.app/",
       },
       {
-        name: "Interactive Space Experience",
-        image: projectLambo,
-        link: "https://github.com/balapranav3010",
+        name: "Targo logistics website",
+        image: projectTargoLogistics,
+        link: "https://targo-logistics-neon.vercel.app",
       },
       {
         name: "Flavoured drinks website",
