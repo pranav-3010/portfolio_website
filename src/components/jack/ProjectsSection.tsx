@@ -15,6 +15,7 @@ import projectPortfolioLeftBottom from "@/assets/prot.png";
 import projectDental from "@/assets/project-dental.png";
 import projectTargo from "@/assets/project-targo.png";
 import projectGym from "@/assets/project-gym.png";
+import projectCoffeeDay from "@/assets/project-coffee-day.png";
 
 interface SubProject {
   name: string;
@@ -119,9 +120,9 @@ const PROJECTS: Project[] = [
     mainImageClass: "object-contain p-8 md:p-12 bg-neutral-900/30",
     subProjects: [
       {
-        name: "Clean Informational Website",
-        image: projectBasic,
-        link: "https://github.com/balapranav3010",
+        name: "Coffee day website",
+        image: projectCoffeeDay,
+        link: "https://coffee-day-eta.vercel.app",
       },
       {
         name: "Aurora Brew (Cafe Website)",
