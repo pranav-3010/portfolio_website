@@ -20,6 +20,7 @@ import projectHuracan from "@/assets/project-huracan.png";
 import projectDrinkNew from "@/assets/project-drink-new.png";
 import projectTargoLogistics from "@/assets/project-targo-logistics.png";
 import projectArdenPortfolio from "@/assets/project-arden-portfolio.jpg";
+import projectDemoFrontendPortfolio from "@/assets/project-demo-frontend-portfolio.png";
 
 
 
@@ -107,14 +108,14 @@ const PROJECTS: Project[] = [
     image: projectPortfolio,
     subProjects: [
       {
+        name: "Demo Frontend Portfolio",
+        image: projectDemoFrontendPortfolio,
+        link: "https://demo-frontend-portfolio.vercel.app",
+      },
+      {
         name: "Arden Vale Portfolio",
         image: projectArdenPortfolio,
         link: "https://github.com/pranav-3010",
-      },
-      {
-        name: "Mariana Creative Portfolio",
-        image: projectPortfolio,
-        link: "https://github.com/balapranav3010",
       },
       {
         name: "Minimalist Designer Showcase",
