@@ -12,7 +12,7 @@ import projectBasic from "@/assets/project-basic.png";
 import projectBasicCafe from "@/assets/project-basic-cafe.jpg";
 import projectPortfolioLeftTop from "@/assets/cp.png";
 import projectPortfolioLeftBottom from "@/assets/prot.png";
-import projectDental from "@/assets/project-dental.png";
+import projectCreativeMarketing from "@/assets/project-creative-marketing.png";
 import projectTargo from "@/assets/project-targo.png";
 import projectGym from "@/assets/project-gym.png";
 import projectCoffeeDay from "@/assets/project-coffee-day.png";
@@ -46,12 +46,12 @@ const PROJECTS: Project[] = [
     n: "01",
     category: "Custom Web",
     name: "Business Websites",
-    image: projectDental,
+    image: projectCreativeMarketing,
     subProjects: [
       {
-        name: "BrightSmile Dental Clinic",
-        image: projectDental,
-        link: "https://dental-hub-craft.vercel.app/",
+        name: "PeachWeb Creative Marketing",
+        image: projectCreativeMarketing,
+        link: "https://creative-marketing-peach.vercel.app",
       },
       {
         name: "Gym website",
