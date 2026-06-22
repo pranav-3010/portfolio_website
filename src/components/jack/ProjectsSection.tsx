@@ -22,6 +22,7 @@ import projectDrinkNew from "@/assets/project-drink-new.png";
 import projectTargoLogistics from "@/assets/project-targo-logistics.png";
 import projectArdenPortfolio from "@/assets/project-arden-portfolio.jpg";
 import projectDemoFrontendPortfolio from "@/assets/project-demo-frontend-portfolio.png";
+import projectGame from "@/assets/game.png";
 
 
 
@@ -99,6 +100,11 @@ const PROJECTS: Project[] = [
         name: "Nike Jordan Store",
         image: projectNike,
         link: "https://github.com/balapranav3010",
+      },
+      {
+        name: "Elevate — Game Style",
+        image: projectGame,
+        link: "https://elevate-game-style.vercel.app/",
       },
       {
         name: "Targo — Luxury Car Dealership",
