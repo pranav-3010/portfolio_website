@@ -79,14 +79,14 @@ const PROJECTS: Project[] = [
         link: "https://blue-lamborghini-huracan.vercel.app/",
       },
       {
-        name: "Targo logistics website",
-        image: projectTargoLogistics,
-        link: "https://targo-logistics-neon.vercel.app",
-      },
-      {
         name: "Flavoured drinks website",
         image: projectDrinkNew,
         link: "https://flavoured-drink.vercel.app",
+      },
+      {
+        name: "Targo logistics website",
+        image: projectTargoLogistics,
+        link: "https://targo-logistics-neon.vercel.app",
       },
     ],
   },
