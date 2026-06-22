@@ -97,11 +97,6 @@ const PROJECTS: Project[] = [
     image: projectNike,
     subProjects: [
       {
-        name: "Nike Jordan Store",
-        image: projectNike,
-        link: "https://github.com/balapranav3010",
-      },
-      {
         name: "Elevate — Game Style",
         image: projectGame,
         link: "https://elevate-game-style.vercel.app/",
