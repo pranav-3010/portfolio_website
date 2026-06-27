@@ -101,7 +101,7 @@ const PROJECTS: Project[] = [
         link: "https://elevate-game-style.vercel.app/",
       },
       {
-        name: "Targo — Luxury Car Dealership",
+        name: "Automobiles Showroom",
         image: projectTargo,
         link: "https://targo-automobiles.vercel.app",
       },
