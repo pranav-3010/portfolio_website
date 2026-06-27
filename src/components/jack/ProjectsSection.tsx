@@ -25,6 +25,7 @@ import projectDemoFrontendPortfolio from "@/assets/project-demo-frontend-portfol
 import projectGame from "@/assets/game.png";
 import projectSrinivasInteriors from "@/assets/project-srinivas-interiors.png";
 import projectOrbyte from "@/assets/project-orbyte.png";
+import projectRobotExhibition from "@/assets/project-robot-exhibition.png";
 
 
 
@@ -73,7 +74,7 @@ const PROJECTS: Project[] = [
     n: "02",
     category: "Interactive Web",
     name: "3D Animated Websites",
-    image: projectLambo,
+    image: projectRobotExhibition,
     subProjects: [
       {
         name: "Lamborghini-Huracan Website",
