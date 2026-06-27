@@ -24,6 +24,7 @@ import projectArdenPortfolio from "@/assets/project-arden-portfolio.jpg";
 import projectDemoFrontendPortfolio from "@/assets/project-demo-frontend-portfolio.png";
 import projectGame from "@/assets/game.png";
 import projectSrinivasInteriors from "@/assets/project-srinivas-interiors.png";
+import projectOrbyte from "@/assets/project-orbyte.png";
 
 
 
@@ -49,7 +50,7 @@ const PROJECTS: Project[] = [
     n: "01",
     category: "Custom Web",
     name: "Business Websites",
-    image: projectDental,
+    image: projectOrbyte,
     subProjects: [
       {
         name: "BrightSmile Dental Clinic",
