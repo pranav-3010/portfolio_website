@@ -20,7 +20,7 @@ import projectCoffeeDay from "@/assets/project-coffee-day.png";
 import projectHuracan from "@/assets/project-huracan.png";
 import projectDrinkNew from "@/assets/project-drink-new.png";
 import projectTargoLogistics from "@/assets/project-targo-logistics.png";
-import projectArdenPortfolio from "@/assets/project-arden-portfolio.jpg";
+import projectWebDevPortfolio from "@/assets/project-webdev-portfolio.png";
 import projectDemoFrontendPortfolio from "@/assets/project-demo-frontend-portfolio.png";
 import projectGame from "@/assets/game.png";
 import projectSrinivasInteriors from "@/assets/project-srinivas-interiors.png";
@@ -123,9 +123,9 @@ const PROJECTS: Project[] = [
         link: "https://demo-frontend-portfolio.vercel.app",
       },
       {
-        name: "Arden Vale Portfolio",
-        image: projectArdenPortfolio,
-        link: "https://github.com/pranav-3010",
+        name: "WebDev Portfolio",
+        image: projectWebDevPortfolio,
+        link: "https://web-dev-portfolio-alpha-sooty.vercel.app",
       },
       {
         name: "Minimalist Designer Showcase",
