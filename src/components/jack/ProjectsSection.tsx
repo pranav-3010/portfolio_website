@@ -211,22 +211,22 @@ function ProjectCard({
         </div>
 
         {/* Images */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-5 gap-2 sm:gap-4">
           {/* Left */}
-          <div className="md:col-span-2 flex flex-col gap-4">
+          <div className="col-span-2 flex flex-col gap-2 sm:gap-4">
             <img
               src={project.imageLeftTop || project.image}
               alt={project.name}
               loading="lazy"
               className="
                 w-full object-cover
-                rounded-[30px]
+                rounded-[12px] sm:rounded-[30px]
                 border border-white/10
                 hover:scale-[1.02]
                 transition-all duration-300
               "
               style={{
-                height: "clamp(140px,18vw,240px)",
+                height: "clamp(60px,18vw,240px)",
               }}
             />
 
@@ -236,19 +236,19 @@ function ProjectCard({
               loading="lazy"
               className="
                 w-full object-cover
-                rounded-[30px]
+                rounded-[12px] sm:rounded-[30px]
                 border border-white/10
                 hover:scale-[1.02]
                 transition-all duration-300
               "
               style={{
-                height: "clamp(180px,24vw,320px)",
+                height: "clamp(80px,24vw,320px)",
               }}
             />
           </div>
 
           {/* Main Image */}
-          <div className="md:col-span-3 flex items-center justify-center overflow-hidden rounded-[35px] md:rounded-[45px] border border-white/10">
+          <div className="col-span-3 flex items-center justify-center overflow-hidden rounded-[15px] sm:rounded-[35px] md:rounded-[45px] border border-white/10">
             <img
               src={project.image}
               alt={project.name}
