@@ -87,7 +87,8 @@ export function FooterSection() {
             <a
               href="https://github.com/pranav-3010"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
               className="
                 text-white/60
                 hover:text-white
@@ -101,7 +102,8 @@ export function FooterSection() {
             <a
               href="https://linkedin.com"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
               className="
                 text-white/60
                 hover:text-[#0A66C2]
@@ -115,7 +117,8 @@ export function FooterSection() {
             <a
               href="https://instagram.com"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="Instagram Profile"
               className="
                 text-white/60
                 hover:text-[#E4405F]

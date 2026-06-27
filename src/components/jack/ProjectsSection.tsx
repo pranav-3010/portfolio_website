@@ -3,16 +3,9 @@ import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 import { FadeIn } from "./FadeIn";
 import { LiveProjectButton } from "./LiveProjectButton";
 
-import projectBusiness from "@/assets/project-business.jpg";
-import projectLambo from "@/assets/project-lambo.png";
-import projectDrink from "@/assets/project-drink.png";
 import projectNike from "@/assets/project-nike.jpg";
 import projectPortfolio from "@/assets/project-portfolio.png";
-import projectBasic from "@/assets/project-basic.png";
 import projectBasicCafe from "@/assets/project-basic-cafe.jpg";
-import projectPortfolioLeftTop from "@/assets/cp.png";
-import projectPortfolioLeftBottom from "@/assets/prot.png";
-import projectCreativeMarketing from "@/assets/project-creative-marketing.png";
 import projectDental from "@/assets/project-dental.png";
 import projectTargo from "@/assets/project-targo.png";
 import projectGym from "@/assets/project-gym.png";
