@@ -129,7 +129,6 @@ const PROJECTS: Project[] = [
     category: "Web Essentials",
     name: "Basic Websites",
     image: projectBasicCafe,
-    mainImageClass: "object-contain p-8 md:p-12 bg-neutral-900/30",
     subProjects: [
       {
         name: "Coffee day website",
