@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { FadeIn } from "./FadeIn";
 import { Magnet } from "./Magnet";
 import { ContactButton } from "./ContactButton";
@@ -13,39 +12,6 @@ const NAV_LINKS = [
 ];
 
 export function HeroSection() {
-  const fullText = "Hi, i'm pranav";
-  const [typedText, setTypedText] = useState("");
-  const [showCursor, setShowCursor] = useState(true);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!isMounted) return;
-
-    let index = 0;
-    let timerId: NodeJS.Timeout;
-    let intervalId: NodeJS.Timeout;
-
-    timerId = setTimeout(() => {
-      intervalId = setInterval(() => {
-        setTypedText(fullText.slice(0, index + 1));
-        index++;
-        if (index >= fullText.length) {
-          clearInterval(intervalId);
-          timerId = setTimeout(() => setShowCursor(false), 2000);
-        }
-      }, 70);
-    }, 400);
-
-    return () => {
-      clearTimeout(timerId);
-      if (intervalId) clearInterval(intervalId);
-    };
-  }, [isMounted]);
-
   return (
     <section
       className="h-screen flex flex-col relative"
@@ -97,8 +63,7 @@ export function HeroSection() {
               lg:text-[14.2vw]
             "
           >
-            {isMounted ? (typedText || "\u00A0") : "\u00A0"}
-            {isMounted && showCursor && <span className="animate-pulse ml-1 text-white/50">|</span>}
+            Hi, i'm pranav
           </h1>
         </FadeIn>
       </div>
