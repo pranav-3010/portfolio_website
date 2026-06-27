@@ -97,7 +97,7 @@ export function HeroSection() {
               lg:text-[14.2vw]
             "
           >
-            {isMounted ? (typedText || "\u00A0") : "Hi, i'm pranav"}
+            {isMounted ? (typedText || "\u00A0") : "\u00A0"}
             {isMounted && showCursor && <span className="animate-pulse ml-1 text-white/50">|</span>}
           </h1>
         </FadeIn>
