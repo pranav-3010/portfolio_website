@@ -140,7 +140,7 @@ function SkillRow({
 export function SkillsSection() {
   return (
     <section id="skills"
-      className="py-24 overflow-hidden"
+      className="py-12 sm:py-24 overflow-hidden"
       style={{ background: "#0C0C0C" }}
     >
       <FadeIn y={40}>

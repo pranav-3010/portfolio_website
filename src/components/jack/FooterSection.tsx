@@ -8,7 +8,7 @@ import {
 
 export function FooterSection() {
   return (
-    <footer className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-24 pb-10" id ="contact">
+    <footer className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-12 sm:pt-24 pb-10" id ="contact">
       <div className="max-w-7xl mx-auto">
         {/* CTA */}
         <FadeIn y={40}>

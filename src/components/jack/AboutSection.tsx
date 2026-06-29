@@ -5,7 +5,7 @@ import { ContactButton } from "./ContactButton";
 export function AboutSection() {
   return (
     <section id="about"
-      className="relative min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20 gap-10 sm:gap-14 md:gap-16"
+      className="relative min-h-[75vh] sm:min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-12 sm:py-20 gap-8 sm:gap-14 md:gap-16"
       style={{ background: "#0C0C0C", overflowX: "clip" }}
     >
       <FadeIn

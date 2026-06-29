@@ -63,7 +63,7 @@ const SERVICES = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 bg-[#0C0C0C]">
+    <section id="services" className="px-5 sm:px-8 md:px-10 py-12 sm:py-24 md:py-32 bg-[#0C0C0C]">
       <div
         className="
           max-w-7xl mx-auto

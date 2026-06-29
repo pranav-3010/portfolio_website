@@ -14,7 +14,7 @@ const NAV_LINKS = [
 export function HeroSection() {
   return (
     <section
-      className="h-screen flex flex-col relative"
+      className="h-[75vh] sm:h-screen flex flex-col relative"
       style={{ overflowX: "clip" }}
     >
       {/* Navbar */}

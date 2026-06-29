@@ -284,7 +284,7 @@ export function ProjectsSection() {
       ref={containerRef}
       className="
         px-5 sm:px-8 md:px-10
-        py-20 sm:py-24 md:py-32
+        py-12 sm:py-24 md:py-32
         bg-[#0C0C0C]
       "
     >
