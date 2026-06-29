@@ -29,16 +29,19 @@ const ROW1 = IMAGES.slice(0, 11);
 const ROW2 = IMAGES.slice(11);
 
 function Row({ images }: { images: string[] }) {
-  const tripled = [...images, ...images, ...images];
+  const doubled = [...images, ...images];
   return (
     <div className="flex gap-3" style={{ willChange: "transform" }}>
-      {tripled.map((src, i) => (
+      {doubled.map((src, i) => (
         <img
           key={i}
           src={src}
           alt=""
           loading="lazy"
           className="rounded-2xl object-cover shrink-0 w-[240px] h-[155px] md:w-[420px] md:h-[270px]"
+          style={{
+            contentVisibility: "auto",
+          }}
         />
       ))}
     </div>
