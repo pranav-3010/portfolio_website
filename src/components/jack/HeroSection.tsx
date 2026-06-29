@@ -75,7 +75,7 @@ export function HeroSection() {
           flex
           justify-between
           items-end
-          pb-7
+          pb-[15vh]
           sm:pb-8
           md:pb-10
           px-6
@@ -120,7 +120,7 @@ export function HeroSection() {
           left-1/2
           -translate-x-1/2
           z-10
-          top-[42%]
+          top-[39%]
           -translate-y-1/2
           sm:top-auto
           sm:translate-y-0
