@@ -25,7 +25,7 @@ export function HeroSection() {
         y={-20}
         className="flex items-center justify-between px-6 md:px-10 pt-6 md:pt-8 relative z-20 w-full"
       >
-        <div className="flex items-center gap-4 sm:gap-6 md:gap-8 flex-wrap">
+        <div className="flex items-center justify-between sm:justify-start gap-4 sm:gap-6 md:gap-8 flex-nowrap w-full">
           {NAV_LINKS.map((link) => (
             <a
               key={link}
