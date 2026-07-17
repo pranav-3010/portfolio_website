@@ -370,7 +370,7 @@ export function ProjectsSection() {
             text-white
           "
           style={{
-            fontSize: "clamp(3rem, 12vw, 160px)",
+            fontSize: "clamp(2rem, 8vw, 100px)",
           }}
         >
           Projects

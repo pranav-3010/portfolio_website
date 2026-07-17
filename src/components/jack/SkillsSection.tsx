@@ -156,7 +156,7 @@ export function SkillsSection() {
             mb-20
           "
           style={{
-            fontSize: "clamp(3rem, 12vw, 160px)",
+            fontSize: "clamp(2rem, 8vw, 100px)",
           }}
         >
           Skills

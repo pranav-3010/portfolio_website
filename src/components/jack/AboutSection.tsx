@@ -48,7 +48,7 @@ export function AboutSection() {
       <FadeIn delay={0} y={40} className="text-center relative z-10">
         <h2
           className="hero-heading font-black uppercase leading-none tracking-tight"
-          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
+          style={{ fontSize: "clamp(2rem, 8vw, 100px)" }}
         >
           About Aeronyx
         </h2>
