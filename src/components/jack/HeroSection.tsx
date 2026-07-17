@@ -35,10 +35,10 @@ export function HeroSection() {
                 font-medium
                 uppercase
                 tracking-wider
-                text-xs
-                sm:text-sm
-                md:text-base
-                lg:text-lg
+                text-[10px]
+                sm:text-xs
+                md:text-sm
+                lg:text-base
                 hover:opacity-70
                 transition-opacity duration-200
               "
@@ -62,10 +62,10 @@ export function HeroSection() {
               leading-none
               whitespace-nowrap
               w-full
-              text-[12.5vw]
-              sm:text-[13vw]
-              md:text-[13.5vw]
-              lg:text-[14.2vw]
+              text-[9vw]
+              sm:text-[9.5vw]
+              md:text-[10vw]
+              lg:text-[10.5vw]
             "
           >
             Hi, we're Aeronyx
