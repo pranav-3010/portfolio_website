@@ -68,7 +68,6 @@ const PROJECTS: Project[] = [
     name: "3D Animated Websites",
     image: projectRobotExhibition,
     mainImageClass: "object-contain p-4 md:p-6 bg-black",
-    isPremium: true,
     subProjects: [
       {
         name: "Lamborghini-Huracan Website",
@@ -92,7 +91,6 @@ const PROJECTS: Project[] = [
     category: "E-Commerce",
     name: "E-Commerce Stores",
     image: projectNike,
-    isPremium: true,
     subProjects: [
       {
         name: "Elevate — Game Style",
