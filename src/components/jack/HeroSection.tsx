@@ -62,10 +62,10 @@ export function HeroSection() {
               leading-none
               whitespace-nowrap
               w-full
-              text-[9vw]
-              sm:text-[9.5vw]
-              md:text-[10vw]
-              lg:text-[10.5vw]
+              text-[12.8vw]
+              sm:text-[13.5vw]
+              md:text-[14vw]
+              lg:text-[14.2vw]
             "
           >
             Hi, I'm Pranav
