@@ -68,7 +68,7 @@ export function HeroSection() {
               lg:text-[10.5vw]
             "
           >
-            Hi, we're Aeronyx
+            Hi, I'm Pranav
           </h1>
         </FadeIn>
       </div>
@@ -106,8 +106,8 @@ export function HeroSection() {
               fontSize: "clamp(0.6rem, 1.4vw, 1.5rem)",
             }}
           >
-            creative web development & automation studio
-            building high-speed business solutions
+            computer science student & software developer
+            building practical, modern applications
           </p>
         </FadeIn>
 
