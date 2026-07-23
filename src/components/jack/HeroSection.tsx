@@ -62,13 +62,13 @@ export function HeroSection() {
               leading-none
               whitespace-nowrap
               w-full
-              text-[12.8vw]
-              sm:text-[13.5vw]
-              md:text-[14vw]
-              lg:text-[14.2vw]
+              text-[9.5vw]
+              sm:text-[10vw]
+              md:text-[10.5vw]
+              lg:text-[11vw]
             "
           >
-            Hi, I'm Pranav
+            Hi, we're Aeronyx
           </h1>
         </FadeIn>
       </div>
