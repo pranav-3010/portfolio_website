@@ -63,13 +63,13 @@ export function HeroSection() {
               whitespace-nowrap
               w-full
               pr-2
-              text-[8.5vw]
-              sm:text-[9vw]
-              md:text-[9.5vw]
-              lg:text-[9.8vw]
+              text-[7.5vw]
+              sm:text-[8.2vw]
+              md:text-[8.8vw]
+              lg:text-[9vw]
             "
           >
-            Hi, we're Aeronyx
+            Hi, we're Aeronyx Tech
           </h1>
         </FadeIn>
       </div>
@@ -98,17 +98,17 @@ export function HeroSection() {
               uppercase
               tracking-wide
               leading-snug
-              max-w-[120px]
-              min-[375px]:max-w-[160px]
-              sm:max-w-[220px]
-              md:max-w-[260px]
+              max-w-[140px]
+              min-[375px]:max-w-[180px]
+              sm:max-w-[240px]
+              md:max-w-[280px]
             "
             style={{
               fontSize: "clamp(0.6rem, 1.4vw, 1.5rem)",
             }}
           >
-            computer science student & software developer
-            building practical, modern applications
+            creative web development & automation studio
+            building high-speed business solutions
           </p>
         </FadeIn>
 

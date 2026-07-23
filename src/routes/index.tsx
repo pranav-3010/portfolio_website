@@ -11,22 +11,22 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Pranav | Computer Science Student & Software Developer",
+        title: "Aeronyx Tech — Creative Web Development & Automation Studio",
       },
       {
         name: "description",
         content:
-          "Pranav — Computer Science student and software developer building practical, modern applications.",
+          "Aeronyx Tech — Creative web development and automation studio specialized in custom database schedulers and high-speed sites.",
       },
       {
         property: "og:title",
         content:
-          "Pranav | Computer Science Student & Software Developer",
+          "Aeronyx Tech — Creative Web Development & Automation Studio",
       },
       {
         property: "og:description",
         content:
-          "Pranav — Computer Science student and software developer building practical, modern applications.",
+          "Aeronyx Tech — Creative web development and automation studio specialized in custom database schedulers and high-speed sites.",
       },
     ],
 

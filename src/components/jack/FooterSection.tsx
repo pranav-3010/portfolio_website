@@ -137,7 +137,7 @@ export function FooterSection() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-white/40 text-sm">
-            © 2026 Pranav. All rights reserved.
+            © 2026 Aeronyx Tech. All rights reserved.
           </span>
 
           <span className="text-white/40 text-sm uppercase tracking-[0.2em]">

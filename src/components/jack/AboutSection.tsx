@@ -50,13 +50,13 @@ export function AboutSection() {
           className="hero-heading font-black uppercase leading-none tracking-tight"
           style={{ fontSize: "clamp(2rem, 8vw, 100px)" }}
         >
-          About me
+          About Aeronyx Tech
         </h2>
       </FadeIn>
 
       <div className="relative z-10 flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
         <AnimatedText
-          text="I'm Pranav, a web developer who builds modern, responsive, and high-performing websites. I help businesses and individuals create a strong online presence through custom web development, AI-powered solutions, automation, and SEO-friendly designs. My goal is to deliver websites that are visually appealing, user-focused, and built for growth."
+          text="We are Aeronyx Tech, a web development and automation studio. We design beautiful, high-speed, and automated digital systems. We help businesses create a strong online presence through custom web development, real-time database integrations, CRM receptionist portals, and structured SEO designs. Our goal is to deliver web products that are visually stunning, user-focused, and built for maximum business automation."
           className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[720px]"
           style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
         />
