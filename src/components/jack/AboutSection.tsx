@@ -56,7 +56,7 @@ export function AboutSection() {
 
       <div className="relative z-10 flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
         <AnimatedText
-          text="We are Aeronyx Tech, a web development and automation studio. We design beautiful, high-speed, and automated digital systems. We help businesses create a strong online presence through custom web development, real-time database integrations, CRM receptionist portals, and structured SEO designs. Our goal is to deliver web products that are visually stunning, user-focused, and built for maximum business automation."
+          text="We are Aeronyx Tech, a web development and automation tech. We design beautiful, high-speed, and automated digital systems. We help businesses create a strong online presence through custom web development, real-time database integrations, CRM receptionist portals, and structured SEO designs. Our goal is to deliver web products that are visually stunning, user-focused, and built for maximum business automation."
           className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[720px]"
           style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
         />

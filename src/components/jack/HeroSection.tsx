@@ -63,13 +63,13 @@ export function HeroSection() {
               whitespace-nowrap
               w-full
               pr-2
-              text-[7.5vw]
-              sm:text-[8.2vw]
-              md:text-[8.8vw]
-              lg:text-[9vw]
+              text-[8.5vw]
+              sm:text-[9vw]
+              md:text-[9.5vw]
+              lg:text-[9.8vw]
             "
           >
-            Hi, we're Aeronyx Tech
+            Hi, we're Aeronyx
           </h1>
         </FadeIn>
       </div>
@@ -107,7 +107,7 @@ export function HeroSection() {
               fontSize: "clamp(0.6rem, 1.4vw, 1.5rem)",
             }}
           >
-            creative web development & automation studio
+            creative web development & automation tech
             building high-speed business solutions
           </p>
         </FadeIn>
