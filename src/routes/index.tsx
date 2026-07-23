@@ -36,6 +36,22 @@ export const Route = createFileRoute("/")({
         type: "image/png",
         href: "/favicon.png",
       },
+      {
+        rel: "dns-prefetch",
+        href: "https://dental-hub-craft.vercel.app",
+      },
+      {
+        rel: "dns-prefetch",
+        href: "https://flavoured-drink.vercel.app",
+      },
+      {
+        rel: "dns-prefetch",
+        href: "https://elevate-game-style.vercel.app",
+      },
+      {
+        rel: "dns-prefetch",
+        href: "https://blue-lamborghini-huracan.vercel.app",
+      },
     ],
   }),
 

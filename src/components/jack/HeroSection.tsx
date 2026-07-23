@@ -152,9 +152,11 @@ export function HeroSection() {
           <img
             src={aminePortrait}
             alt="Pranav portrait"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
             className="w-full h-auto select-none pointer-events-none"
             draggable={false}
-            fetchPriority="high"
           />
         </Magnet>
       </FadeIn>
