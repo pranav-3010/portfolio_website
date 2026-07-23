@@ -51,7 +51,7 @@ export function HeroSection() {
       </FadeIn>
 
       {/* Title */}
-      <div className="overflow-hidden mt-6 sm:mt-4 md:-mt-5 px-6">
+      <div className="overflow-visible mt-6 sm:mt-4 md:-mt-5 px-4 sm:px-6">
         <FadeIn delay={0.15} y={40}>
           <h1
             className="
@@ -62,10 +62,11 @@ export function HeroSection() {
               leading-none
               whitespace-nowrap
               w-full
-              text-[9.5vw]
-              sm:text-[10vw]
-              md:text-[10.5vw]
-              lg:text-[11vw]
+              pr-2
+              text-[8.5vw]
+              sm:text-[9vw]
+              md:text-[9.5vw]
+              lg:text-[9.8vw]
             "
           >
             Hi, we're Aeronyx
